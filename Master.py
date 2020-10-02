@@ -94,7 +94,7 @@ class MyApp(QMainWindow):
         A2 = self.ui.A2.text()
         N1 = self.ui.N1.text()
         N2 = self.ui.N2.text()
-        Location = A1 + A2 + N1 + N2
+        Location = A1 + ', ' + A2 + ' - ' + N1 + ', ' + N2
 
         can = canvas.Canvas('File_merge.pdf', pagesize=(A4))
         can.setFillColorRGB(0, 0, 0)
@@ -117,10 +117,10 @@ class MyApp(QMainWindow):
         can.drawString(433, y - 93, Date)
         can.drawString(323, y - 120, Floor)
         can.drawString(425, y - 120, Location)
-        can.drawString(130, y - 214, N1)
-        can.drawString(130, y - 430, N2)
-        can.drawString(166, y - 191, A1)
-        can.drawString(440, y - 191, A2)
+        can.drawString(128, y - 214, N1)
+        can.drawString(128, y - 430, N2)
+        can.drawString(166, y - 190, A1)
+        can.drawString(440, y - 190, A2)
 
         if self.PicPathFloor['Pic1'] != '':
             can.drawImage(self.PicPathFloor['Pic1'], 72, y - 597, width=240, height=140,
@@ -167,7 +167,7 @@ class MyApp(QMainWindow):
 
         can.save()
 
-        Outpath = os.path.join(BASE_DIR, Building + Location + Floor + '.pdf')
+        Outpath = os.path.join(BASE_DIR, Building + '_' + Location + '_' + Floor + '.pdf')
         base_pdf = pdfrw.PdfReader('Floor.pdf')
         pdfrw.PdfWriter().write('Temp.pdf', base_pdf)
         base = pdfrw.PdfReader('Temp.pdf')
@@ -279,7 +279,7 @@ class MyApp(QMainWindow):
 
         can.save()
 
-        Outpath = os.path.join(BASE_DIR, Building + Location + Floor + '.pdf')
+        Outpath = os.path.join(BASE_DIR, Building + '_' + Location + '_' + Floor + '.pdf')
         base_pdf = pdfrw.PdfReader('Column.pdf')
         pdfrw.PdfWriter().write('Temp.pdf', base_pdf)
         base = pdfrw.PdfReader('Temp.pdf')
@@ -391,7 +391,7 @@ class MyApp(QMainWindow):
 
         can.save()
 
-        Outpath = os.path.join(BASE_DIR, Building + Location + Floor + '.pdf')
+        Outpath = os.path.join(BASE_DIR, Building + '_' + Location + '_' + Floor + '.pdf')
         base_pdf = pdfrw.PdfReader('Beam.pdf')
         pdfrw.PdfWriter().write('Temp.pdf', base_pdf)
         base = pdfrw.PdfReader('Temp.pdf')
