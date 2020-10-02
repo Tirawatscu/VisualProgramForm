@@ -1,0 +1,1907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>606</width>
+    <height>685</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>581</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Floor</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>281</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Grid</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>281</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Aphabet</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="A1"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="A2"/>
+          </item>
+         </layout>
+        </item>
+        <item alignment="Qt::AlignHCenter">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Number</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="N1"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="N2"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>61</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Project</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Date</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Floor</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Building</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>221</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLineEdit" name="project"/>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="dateEdit">
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2020</year>
+           <month>9</month>
+           <day>18</day>
+          </datetime>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="floor"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>Cedar</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Cedar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ebony</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Oak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Pine</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Lobby</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Parking area</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ebony wing</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Road area</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>231</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Crack Characteristic</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>227</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QRadioButton" name="CC1">
+          <property name="text">
+           <string>Buttom of slab</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="CC2">
+          <property name="text">
+           <string>Top of slab</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>231</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Danage Level</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>227</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QRadioButton" name="DL1">
+          <property name="text">
+           <string>Severe</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="DL2">
+          <property name="text">
+           <string>Moderate</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="DL3">
+          <property name="text">
+           <string>Least</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="DropIn" name="Pic1">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>30</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>30</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>130</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic4">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>130</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic7">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>330</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic5">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic6">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>230</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic8">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>330</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic10">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>430</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic9">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>430</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>570</y>
+        <width>571</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Generate Report</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clearpic">
+      <property name="geometry">
+       <rect>
+        <x>311</x>
+        <y>530</y>
+        <width>251</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear Picture</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>479</y>
+        <width>281</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Remark</string>
+      </property>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>20</y>
+         <width>281</width>
+         <height>61</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Column</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButton2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>570</y>
+        <width>571</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Generate Report</string>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic6_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>230</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>281</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Grid</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_19">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>281</width>
+         <height>53</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_22">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QLabel" name="label_25">
+            <property name="text">
+             <string>Aphabet</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>Number</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QLineEdit" name="A1_2"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="N1_2"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="clearpic_2">
+      <property name="geometry">
+       <rect>
+        <x>311</x>
+        <y>530</y>
+        <width>251</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear Picture</string>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic3_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>130</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_14">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>231</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Crack Characteristic</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_21">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>227</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_23">
+        <item>
+         <widget class="QRadioButton" name="CC1_2">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Horizontal Crack</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="CC2_2">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Vertical Crack</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="CC3_2">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Inclination Crack</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_22">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>221</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_24">
+       <item>
+        <widget class="QLineEdit" name="project2"/>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="dateEdit2">
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2020</year>
+           <month>9</month>
+           <day>18</day>
+          </datetime>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="floor2"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox2">
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>Cedar</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Cedar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ebony</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Oak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Pine</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Lobby</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Parking area</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ebony wing</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Road area</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="DropIn" name="Pic5_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic2_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>30</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_15">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>231</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Danage Level</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_23">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>227</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_25">
+        <item>
+         <widget class="QRadioButton" name="DL1_2">
+          <property name="text">
+           <string>Severe</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="DL2_2">
+          <property name="text">
+           <string>Moderate</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="DL3_2">
+          <property name="text">
+           <string>Least</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="DropIn" name="Pic9_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>430</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic4_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>130</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic7_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>330</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic1_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>30</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic8_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>330</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic10_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>430</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_16">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>479</y>
+        <width>281</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Remark</string>
+      </property>
+      <widget class="QTextEdit" name="remark2">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>20</y>
+         <width>281</width>
+         <height>61</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_24">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>61</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_26">
+       <item>
+        <widget class="QLabel" name="label_27">
+         <property name="text">
+          <string>Project</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_28">
+         <property name="text">
+          <string>Date</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_29">
+         <property name="text">
+          <string>Floor</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>Building</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Beam</string>
+     </attribute>
+     <widget class="DropIn" name="Pic8_3">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>330</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic7_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>330</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic5_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic1_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>30</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic10_3">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>430</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic3_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>130</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic2_3">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>30</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic6_3">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>230</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="DropIn" name="Pic4_3">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>130</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>180</y>
+        <width>281</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Grid</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_20">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>281</width>
+         <height>53</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_27">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLabel" name="label_31">
+            <property name="text">
+             <string>Number</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_32">
+            <property name="text">
+             <string>Number</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QLineEdit" name="A1_3"/>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="N1_3"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_25">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>61</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_28">
+       <item>
+        <widget class="QLabel" name="label_33">
+         <property name="text">
+          <string>Project</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_34">
+         <property name="text">
+          <string>Date</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_35">
+         <property name="text">
+          <string>Floor</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_36">
+         <property name="text">
+          <string>Building</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_18">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>479</y>
+        <width>281</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Remark</string>
+      </property>
+      <widget class="QTextEdit" name="remark3">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>20</y>
+         <width>281</width>
+         <height>61</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_26">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>221</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_29">
+       <item>
+        <widget class="QLineEdit" name="project3"/>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="dateEdit3">
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2020</year>
+           <month>9</month>
+           <day>18</day>
+          </datetime>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="floor3"/>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox3">
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>Cedar</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>Cedar</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ebony</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Oak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Pine</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Lobby</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Parking area</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ebony wing</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Road area</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="clearpic_3">
+      <property name="geometry">
+       <rect>
+        <x>311</x>
+        <y>530</y>
+        <width>251</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear Picture</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_19">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>231</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Crack Characteristic</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_27">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>227</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_30">
+        <item>
+         <widget class="QRadioButton" name="CC1_3">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Horizontal Crack</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="CC2_3">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Vertical Crack</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="CC3_3">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Inclination Crack</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="DropIn" name="Pic9_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>430</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>Drop Picture here</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_20">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>231</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Danage Level</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_28">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>227</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_31">
+        <item>
+         <widget class="QRadioButton" name="DL1_3">
+          <property name="text">
+           <string>Severe</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="DL2_3">
+          <property name="text">
+           <string>Moderate</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="DL3_3">
+          <property name="text">
+           <string>Least</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>570</y>
+        <width>571</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Generate Report</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>Wall</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>606</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>DropIn</class>
+   <extends>QLabel</extends>
+   <header location="global">dropin.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
