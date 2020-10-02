@@ -242,6 +242,8 @@ class MyApp(QMainWindow):
             can.drawImage(self.PicPathColumn['Pic2'], 315, y - 580, width=240, height=140,
                           preserveAspectRatio=True)
 
+        can.drawString(135, y - 710, self.ui.remark2.toPlainText())
+
         can.showPage()
         can.setFillColorRGB(0, 0, 0)
         can.setFont("THSarabunNew", 14)
@@ -353,6 +355,8 @@ class MyApp(QMainWindow):
         if self.PicPathBeam['Pic2'] != '':
             can.drawImage(self.PicPathBeam['Pic2'], 315, y - 580, width=240, height=140,
                           preserveAspectRatio=True)
+
+        can.drawString(135, y - 710, self.ui.remark3.toPlainText())
 
         can.showPage()
         can.setFillColorRGB(0, 0, 0)
