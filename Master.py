@@ -76,7 +76,7 @@ class MyApp(QMainWindow):
         pdfmetrics.registerFont(TTFont('THSarabunNew', 'THSarabunNew.ttf'))
         y = 792.52
         Building = self.ui.comboBox.currentText()
-        Date = self.date
+        Date = self.ui.dateEdit.date().toString("dd/MM/yyyy")
         Floor = self.ui.floor.text()
         self.PicPathFloor = {
             'Pic1': self.ui.Pic1.topath(),
@@ -193,7 +193,7 @@ class MyApp(QMainWindow):
         pdfmetrics.registerFont(TTFont('THSarabunNew', 'THSarabunNew.ttf'))
         y = 792.52
         Building = self.ui.comboBox2.currentText()
-        Date = self.date
+        Date = self.ui.dateEdit.date().toString("dd/MM/yyyy")
         Floor = self.ui.floor2.text()
         self.PicPathColumn = {
             'Pic1': self.ui.Pic1_2.topath(),
@@ -307,7 +307,7 @@ class MyApp(QMainWindow):
         pdfmetrics.registerFont(TTFont('THSarabunNew', 'THSarabunNew.ttf'))
         y = 792.52
         Building = self.ui.comboBox3.currentText()
-        Date = self.date
+        Date = self.ui.dateEdit.date().toString("dd/MM/yyyy")
         Floor = self.ui.floor3.text()
         self.PicPathBeam = {
             'Pic1': self.ui.Pic1_3.topath(),
