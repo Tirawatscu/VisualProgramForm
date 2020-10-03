@@ -242,7 +242,7 @@ class MyApp(QMainWindow):
             can.drawImage(self.PicPathColumn['Pic2'], 315, y - 580, width=240, height=140,
                           preserveAspectRatio=True)
 
-        can.drawString(135, y - 710, self.ui.remark2.toPlainText())
+        can.drawString(135, y - 700, self.ui.remark2.toPlainText())
 
         can.showPage()
         can.setFillColorRGB(0, 0, 0)
