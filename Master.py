@@ -72,6 +72,24 @@ class MyApp(QMainWindow):
             'Pic10': '',
         }
 
+        self.ui.project4.setText('The President Park Sukhumvit 24')
+        #self.ui.CC1_4.setChecked(True)
+        self.ui.DL1_4.setChecked(True)
+        self.ui.pushButton4.clicked.connect(self.generateWall)
+        self.ui.clearpic_4.clicked.connect(self.CLEAR4)
+        self.PicPathWall = {
+            'Pic1': '',
+            'Pic2': '',
+            'Pic3': '',
+            'Pic4': '',
+            'Pic5': '',
+            'Pic6': '',
+            'Pic7': '',
+            'Pic8': '',
+            'Pic9': '',
+            'Pic10': '',
+        }
+
     def generateFloor(self):
         pdfmetrics.registerFont(TTFont('THSarabunNew', 'THSarabunNew.ttf'))
         y = 792.52
@@ -417,6 +435,118 @@ class MyApp(QMainWindow):
             out.write(Outpath)
         os.remove("Temp.pdf")
 
+    def generateWall(self):
+        pdfmetrics.registerFont(TTFont('THSarabunNew', 'THSarabunNew.ttf'))
+        y = 792.52
+        Building = self.ui.comboBox4.currentText()
+        Date = self.ui.dateEdit4.date().toString("dd/MM/yyyy")
+        Floor = self.ui.floor4.text()
+        self.PicPathWall = {
+            'Pic1': self.ui.Pic1_4.topath(),
+            'Pic2': self.ui.Pic2_4.topath(),
+            'Pic3': self.ui.Pic3_4.topath(),
+            'Pic4': self.ui.Pic4_4.topath(),
+            'Pic5': self.ui.Pic5_4.topath(),
+            'Pic6': self.ui.Pic6_4.topath(),
+            'Pic7': self.ui.Pic7_4.topath(),
+            'Pic8': self.ui.Pic8_4.topath(),
+            'Pic9': self.ui.Pic9_4.topath(),
+            'Pic10': self.ui.Pic10_4.topath(),
+        }
+        A1 = self.ui.A1_4.text()
+        A2 = self.ui.A2_4.text()
+        N1 = self.ui.N1_4.text()
+        N2 = self.ui.N2_4.text()
+        Location = A1 + ', ' + A2 + ' - ' + N1 + ', ' + N2
+
+        can = canvas.Canvas('File_merge.pdf', pagesize=(A4))
+        can.setFillColorRGB(0, 0, 0)
+        can.setFont("Helvetica", 20)
+
+        if self.ui.DL1_4.isChecked():
+            can.drawString(167, y - 645, u'\u2713')
+        elif self.ui.DL2_4.isChecked():
+            can.drawString(275, y - 645, u'\u2713')
+        elif self.ui.DL3_4.isChecked():
+            can.drawString(420, y - 645, u'\u2713')
+
+        can.setFont("THSarabunNew", 14)
+        can.drawString(128, y - 149, Building)
+        can.drawString(433, y - 93, Date)
+        can.drawString(323, y - 120, Floor)
+        can.drawString(425, y - 120, Location)
+        can.drawString(126, y - 214, A1)
+        can.drawString(126, y - 426, A2)
+        can.drawString(165, y - 190, N1)
+        can.drawString(435, y - 190, N2)
+
+        if self.PicPathWall['Pic1'] != '':
+            can.drawImage(self.PicPathWall['Pic1'], 72, y - 597, width=240, height=140,
+                          preserveAspectRatio=True)
+        if self.PicPathWall['Pic2'] != '':
+            can.drawImage(self.PicPathWall['Pic2'], 315, y - 597, width=240, height=140,
+                          preserveAspectRatio=True)
+        can.drawString(135, y - 677, self.ui.remark4.toPlainText())
+
+        can.showPage()
+        can.setFillColorRGB(0, 0, 0)
+        can.setFont("THSarabunNew", 14)
+        can.drawString(128, y - 149, Building)
+        can.drawString(433, y - 93, Date)
+        can.drawString(323, y - 120, Floor) 
+        can.drawString(425, y - 120, Location)
+
+        if self.PicPathWall['Pic3'] != '':
+            can.drawImage(self.PicPathWall['Pic3'], 72, y - 315, width=240, height=140,
+                          preserveAspectRatio=True)
+        if self.PicPathWall['Pic4'] != '':
+            can.drawImage(self.PicPathWall['Pic4'], 315, y - 315, width=240, height=140,
+                          preserveAspectRatio=True)
+
+        if self.PicPathWall['Pic5'] != '':
+            can.drawImage(self.PicPathWall['Pic5'], 72, y - 460, width=240, height=140,
+                          preserveAspectRatio=True)
+        if self.PicPathWall['Pic6'] != '':
+            can.drawImage(self.PicPathWall['Pic6'], 315, y - 460, width=240, height=140,
+                          preserveAspectRatio=True)
+        if self.PicPathWall['Pic7'] != '':
+            can.drawImage(self.PicPathWall['Pic7'], 72, y - 605, width=240, height=140,
+                          preserveAspectRatio=True)
+        if self.PicPathWall['Pic8'] != '':
+            can.drawImage(self.PicPathWall['Pic8'], 315, y - 605, width=240, height=140,
+                          preserveAspectRatio=True)
+
+        if self.PicPathWall['Pic9'] != '':
+            can.drawImage(self.PicPathWall['Pic9'], 72, y - 750, width=240, height=140,
+                          preserveAspectRatio=True)
+        if self.PicPathWall['Pic10'] != '':
+            can.drawImage(self.PicPathWall['Pic10'], 315, y - 750, width=240, height=140,
+                          preserveAspectRatio=True)
+
+        can.save()
+
+        Outpath = os.path.join(BASE_DIR, Building + '_' + Location + '_' + Floor + '.pdf')
+        base_pdf = pdfrw.PdfReader('Wall.pdf')
+        pdfrw.PdfWriter().write('Temp.pdf', base_pdf)
+        base = pdfrw.PdfReader('Temp.pdf')
+        watermark_pdf = pdfrw.PdfReader('File_merge.pdf')
+        for page in range(len(base.pages)):
+            mark = watermark_pdf.pages[page]
+            merger = pdfrw.PageMerge(base.pages[page])
+            merger.add(mark).render()
+        writer = pdfrw.PdfWriter()
+        writer.write('Temp.pdf', base)
+        inpfn = 'Temp.pdf'
+        out = pdfrw.PdfWriter()
+        write = pdfrw.PdfReader(inpfn)
+        if self.PicPathColumn['Pic3'] == '':
+            out.addpage(write.pages[0])
+            out.write(Outpath)
+        else:
+            out.addpages(write.pages)
+            out.write(Outpath)
+        os.remove("Temp.pdf")
+
     def CLEAR(self):
         QApplication.processEvents()
         self.ui.Pic1.path = ''
@@ -485,6 +615,29 @@ class MyApp(QMainWindow):
         self.ui.Pic8_3.setText('Drop Picture here')
         self.ui.Pic9_3.setText('Drop Picture here')
         self.ui.Pic10_3.setText('Drop Picture here')
+
+    def CLEAR4(self):
+        QApplication.processEvents()
+        self.ui.Pic1_4.path = ''
+        self.ui.Pic2_4.path = ''
+        self.ui.Pic3_4.path = ''
+        self.ui.Pic4_4.path = ''
+        self.ui.Pic5_4.path = ''
+        self.ui.Pic6_4.path = ''
+        self.ui.Pic7_4.path = ''
+        self.ui.Pic8_4.path = ''
+        self.ui.Pic9_4.path = ''
+        self.ui.Pic10_4.path = ''
+        self.ui.Pic1_4.setText('Drop Picture here')
+        self.ui.Pic2_4.setText('Drop Picture here')
+        self.ui.Pic3_4.setText('Drop Picture here')
+        self.ui.Pic4_4.setText('Drop Picture here')
+        self.ui.Pic5_4.setText('Drop Picture here')
+        self.ui.Pic6_4.setText('Drop Picture here')
+        self.ui.Pic7_4.setText('Drop Picture here')
+        self.ui.Pic8_4.setText('Drop Picture here')
+        self.ui.Pic9_4.setText('Drop Picture here')
+        self.ui.Pic10_4.setText('Drop Picture here')
 
 
 if __name__ == '__main__':
