@@ -33,7 +33,7 @@
      </sizepolicy>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -217,6 +217,11 @@
          <item>
           <property name="text">
            <string>Road area</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Cedar wing</string>
           </property>
          </item>
         </widget>
@@ -917,6 +922,11 @@
          <item>
           <property name="text">
            <string>Road area</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Cedar wing</string>
           </property>
          </item>
         </widget>
@@ -1716,6 +1726,11 @@
            <string>Road area</string>
           </property>
          </item>
+         <item>
+          <property name="text">
+           <string>Cedar wing</string>
+          </property>
+         </item>
         </widget>
        </item>
       </layout>
@@ -1959,6 +1974,11 @@
          <item>
           <property name="text">
            <string>Road area</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Cedar wing</string>
           </property>
          </item>
         </widget>
